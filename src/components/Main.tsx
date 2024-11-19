@@ -30,13 +30,24 @@ const Home: React.FC = () => {
   };
 
   return (
+    // <div className="min-h-screen flex flex-col items-center bg-blue-200 p-4">
+    //   <div className="max-w-lg w-full bg-white p-6 rounded-lg shadow-lg">
+    //     <h1 className="text-4xl font-semibold text-center mb-4">To-Do List</h1>
+    //     <TodoForm addTodo={addTodo} />
+    //     <TodoList todos={todos} toggleComplete={toggleComplete} deleteTodo={deleteTodo} />
+    //   </div>
+    // </div>
+
+
+
     <div className="min-h-screen flex flex-col items-center bg-blue-200 p-4">
-      <div className="max-w-lg w-full bg-white p-6 rounded-lg shadow-lg">
-        <h1 className="text-4xl font-semibold text-center mb-4">To-Do List</h1>
-        <TodoForm addTodo={addTodo} />
-        <TodoList todos={todos} toggleComplete={toggleComplete} deleteTodo={deleteTodo} />
-      </div>
-    </div>
+  <div className="w-full max-w-md sm:max-w-lg lg:max-w-xl bg-white p-6 rounded-lg shadow-lg">
+    <h1 className="text-3xl sm:text-4xl font-semibold text-center mb-4">To-Do List</h1>
+    <TodoForm addTodo={addTodo} />
+    <TodoList todos={todos} toggleComplete={toggleComplete} deleteTodo={deleteTodo} />
+  </div>
+</div>
+
   );
 };
 
